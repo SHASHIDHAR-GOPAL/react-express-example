@@ -23,11 +23,7 @@ const Authenticate = (props) => {
           <button className={"btn btn-sm btn-light disabled"} id={"user-name"}>{props.userName}</button>
           <img src={props.profilePic} className="img-fluid rounded-circle" style={{ maxHeight: 40, maxWidth: 40 }}/>
           <button className={"btn btn-sm btn-light"} >Submit Link</button>
-          <GoogleLogout
-              className={"btn btn-sm btn-light"}
-              buttonText="Logout"
-              onLogoutSuccess={props.handleLogout}
-          />
+          <button className={"btn btn-sm btn-light"} onClick={props.handleLogout}>Logout</button>
         </div>
     );
   };
